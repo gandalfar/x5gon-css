@@ -1,0 +1,199 @@
+{{!-- This is the base layout for your project, and will be used on every page. --}}
+
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X5GON</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,600i,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="{{root}}assets/css/app.css">
+</head>
+<body>
+
+<div class="off-canvas-wrapper">
+    <div class="off-canvas position-right" id="offCanvas" data-off-canvas data-transition="push">
+        <button class="close-button" aria-label="Close menu" type="button" data-close>
+            <span aria-hidden="true">&times;</span>
+        </button>
+
+        <ul class="vertical menu">
+            <li class='off-canvas__title'>Science</li>
+            <li class=''><a href='http://www.ggp-i.org/data/browse-the-data/'>Browse the Data</a></li>
+            <li class=''><a href='http://www.ggp-i.org/data/ggp-contextual-database/'>Contextual Data</a></li>
+            <li class=''><a href='http://www.ggp-i.org/data/methodology/'>Methodology</a></li>
+            <li class=''><a href='http://www.ggp-i.org/data/related-studies/'>Related Studies</a></li>
+            <li class=''><a href='http://www.ggp-i.org/data/faq/'>FAQ</a></li>
+            <li class='off-canvas__title'>Follow</li>
+            <li class=''><a href='http://www.ggp-i.org/community/'>Overview</a></li>
+            <li class=''><a href='http://www.ggp-i.org/community/impact/'>Impact</a></li>
+            <li class=''><a href='http://www.ggp-i.org/community/newsletters/'>Newsletters</a></li>
+            <li class=''><a href='/form/publications/'>Bibliography</a></li>
+            <li class=''><a href='http://www.ggp-i.org/community/event/'>Events</a></li>
+            <li class='off-canvas__title'>Platforms</li>
+            <li class=''><a href='http://www.ggp-i.org/about/'>Overview</a></li>
+            <li class=''><a href='http://www.ggp-i.org/about/background/'>Background</a></li>
+            <li class=''><a href='http://www.ggp-i.org/about/organisation/'>Organisation</a></li>
+            <li class=''><a href='http://www.ggp-i.org/about/projects/'>Projects</a></li>
+            <li class=''><a href='http://www.ggp-i.org/about/contact/'>Contact</a></li>
+            <li class='off-canvas__title'>Collaborate</li>
+            <li class=''><a href='http://www.ggp-i.org/about/'>Overview</a></li>
+            <li class=''><a href='http://www.ggp-i.org/about/background/'>Background</a></li>
+            <li class=''><a href='http://www.ggp-i.org/about/organisation/'>Organisation</a></li>
+            <li class=''><a href='http://www.ggp-i.org/about/projects/'>Projects</a></li>
+            <li class=''><a href='http://www.ggp-i.org/about/contact/'>Contact</a></li>
+        </ul>
+    </div>
+    <div class="off-canvas-content" data-off-canvas-content>
+        <header>
+            <div class="grid-container">
+                <div class="grid-x align-center ">
+                    <div class="small-10 medium-12 cell">
+                        <div class="grid-x align-justify">
+                            <div class="cell auto">
+                                <a class="logo" href="/"><img src="{{root}}assets/img/logo.svg" alt="X5GON"/></a>
+                            </div>
+                            <div class="cell shrink grid-x align-middle hide-for-small-only">
+                                <div class="cell shrink header__search js-search">
+                                    <input type="text" placeholder="Type to search &hellip;" />
+                                </div>
+                                <div class="cell shrink icons">
+                                    <a href="#" class="icon js-hide-for-search">{{{inlineSvg "src/assets/img/facebook.svg"}}}</a>
+                                    <a href="#" class="icon js-hide-for-search">{{{inlineSvg "src/assets/img/twitter.svg"}}}</a>
+                                    <button href="#" class="icon icon-search js-icon-search inverse">{{{inlineSvg "src/assets/img/search.svg"}}}</button>
+                                </div>
+                                <div class="cell shrink hide-for-small-only">
+                                    <a class="button primary hollow" href="#">Subscribe</a>
+                                </div>
+                            </div>
+                            <div class="cell shrink show-for-small-only align-self-middle mobile-menu"
+                                 data-toggle="offCanvas" aria-expanded="false" aria-controls="offCanvas">
+                                <img src="{{root}}assets/img/menu.svg" alt="Menu"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="header-menu hide-for-small-only">
+            <div class="grid-container grid-container-padded">
+                <div class="grid-x grid-padding-x align-middle align-center">
+                    <div class="header-menu__item header-menu__has-children cell shrink">
+                        <span class="">Science</span>
+
+                        <div class="header-menu__submenu grid-y">
+                            <a href="http://www.ggp-i.org/data/"
+                               class="header-menu__submenu__item cell expand">Overview</a>
+                            <a href="http://www.ggp-i.org/data/browse-the-data/"
+                               class="header-menu__submenu__item cell expand">Browse
+                                the Data</a>
+                            <a href="/form/" class="header-menu__submenu__item cell expand">Data Access</a>
+                            <a href="http://www.ggp-i.org/data/ggp-contextual-database/"
+                               class="header-menu__submenu__item cell expand">Contextual Data with even more longer
+                                text</a>
+                            <a href="http://www.ggp-i.org/data/methodology/"
+                               class="header-menu__submenu__item cell expand">Methodology</a>
+                            <a href="http://www.ggp-i.org/data/related-studies/"
+                               class="header-menu__submenu__item cell expand">Related
+                                Studies</a>
+                            <a href="http://www.ggp-i.org/data/faq/"
+                               class="header-menu__submenu__item cell expand">FAQ</a>
+
+                        </div>
+                    </div>
+                    <div class="header-menu__item header-menu__has-children cell shrink">
+                        <span class="">Follow</span>
+
+                        <div class="header-menu__submenu grid-y">
+                            <a href="http://www.ggp-i.org/community/"
+                               class="header-menu__submenu__item cell expand">Overview</a>
+                            <a href="http://www.ggp-i.org/community/impact/"
+                               class="header-menu__submenu__item cell expand">Impact</a>
+                            <a href="http://www.ggp-i.org/community/newsletters/"
+                               class="header-menu__submenu__item cell expand">Newsletters</a>
+                            <a href="/form/publications/"
+                               class="header-menu__submenu__item cell expand">Bibliography</a>
+                            <a href="http://www.ggp-i.org/community/event/"
+                               class="header-menu__submenu__item cell expand">Events</a>
+
+                        </div>
+                    </div>
+                    <div class="header-menu__item header-menu__has-children cell shrink">
+                        <span class="">Platforms</span>
+
+                        <div class="header-menu__submenu grid-y">
+                            <a href="http://www.ggp-i.org/about/"
+                               class="header-menu__submenu__item cell expand">Overview</a>
+                            <a href="http://www.ggp-i.org/about/background/"
+                               class="header-menu__submenu__item cell expand">Background</a>
+                            <a href="http://www.ggp-i.org/about/organisation/"
+                               class="header-menu__submenu__item cell expand">Organisation</a>
+                            <a href="http://www.ggp-i.org/about/projects/"
+                               class="header-menu__submenu__item cell expand">Projects</a>
+                            <a href="http://www.ggp-i.org/about/contact/"
+                               class="header-menu__submenu__item cell expand">Contact</a>
+
+                        </div>
+                    </div>
+                    <div class="header-menu__item header-menu__has-children cell shrink">
+                        <span class="">Collaborate</span>
+
+                        <div class="header-menu__submenu grid-y">
+                            <a href="http://www.ggp-i.org/about/"
+                               class="header-menu__submenu__item cell expand">Overview</a>
+                            <a href="http://www.ggp-i.org/about/background/"
+                               class="header-menu__submenu__item cell expand">Background</a>
+                            <a href="http://www.ggp-i.org/about/organisation/"
+                               class="header-menu__submenu__item cell expand">Organisation</a>
+                            <a href="http://www.ggp-i.org/about/projects/"
+                               class="header-menu__submenu__item cell expand">Projects</a>
+                            <a href="http://www.ggp-i.org/about/contact/"
+                               class="header-menu__submenu__item cell expand">Contact</a>
+
+                        </div>
+                    </div>
+                    <div class="header-menu__item header-menu__has-children cell shrink">
+                        <span class="">About</span>
+
+                        <div class="header-menu__submenu grid-y">
+                            <a href="http://www.ggp-i.org/data/"
+                               class="header-menu__submenu__item cell expand">Overview</a>
+                            <a href="http://www.ggp-i.org/data/browse-the-data/"
+                               class="header-menu__submenu__item cell expand">Browse
+                                the Data</a>
+                            <a href="/form/" class="header-menu__submenu__item cell expand">Data Access</a>
+                            <a href="http://www.ggp-i.org/data/ggp-contextual-database/"
+                               class="header-menu__submenu__item cell expand">Contextual Data</a>
+                            <a href="http://www.ggp-i.org/data/methodology/"
+                               class="header-menu__submenu__item cell expand">Methodology</a>
+                            <a href="http://www.ggp-i.org/data/related-studies/"
+                               class="header-menu__submenu__item cell expand">Related
+                                Studies</a>
+                            <a href="http://www.ggp-i.org/data/faq/"
+                               class="header-menu__submenu__item cell expand">FAQ</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+        {{> body}}
+
+        <footer class="footer-contact">
+            <div class="grid-container">
+                <div class="grid-x grid-margin-x align-center">
+                    <div class="small-10 cell">
+                        <p>This experiment is part of <a href="http://www.x5gon.org">X5GON project</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+<script src="{{root}}assets/js/app.js"></script>
+</body>
+</html>

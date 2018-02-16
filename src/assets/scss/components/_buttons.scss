@@ -1,0 +1,26 @@
+.button {
+  font-weight: bold;
+}
+
+.button.primary {
+  color: $white;
+  border: 2px solid $primary-color;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: transparent;
+    color: $primary-color;
+  }
+}
+
+
+.button.hollow.primary {
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $primary-color;
+    border-color: $primary-color;
+    color: $white;
+  }
+}
+

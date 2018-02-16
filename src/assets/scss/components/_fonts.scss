@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'oxygen';
+  src: url('../fonts/oxygen-bold-webfont.woff2') format('woff2'),
+  url('../fonts/oxygen-bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'oxygen';
+  src: url('../fonts/oxygen-bolditalic-webfont.woff2') format('woff2'),
+  url('../fonts/oxygen-bolditalic-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'oxygen';
+  src: url('../fonts/oxygen-italic-webfont.woff2') format('woff2'),
+  url('../fonts/oxygen-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'oxygen';
+  src: url('../fonts/oxygen-webfont.woff2') format('woff2'),
+  url('../fonts/oxygen-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
